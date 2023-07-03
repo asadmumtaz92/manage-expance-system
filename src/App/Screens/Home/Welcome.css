@@ -1,0 +1,39 @@
+.container {
+    background-color: #141414;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataBox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: '5%';
+    margin-right: '5%';
+}
+
+.link {
+    border: solid 0.8px grey;
+    border-radius: 4px;
+    color: white;
+    padding: 11px 20px;
+    margin-top:  45px;
+
+    color: grey;
+    /* display: block; */
+    font-size: 1.2vw;
+    line-height: 1.2em;
+    /* margin: 0.6em 0; */
+    /* min-height: 1.8em; */
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.link:hover {
+    color: white;
+    border: solid 0.8px white;
+}

@@ -1,0 +1,51 @@
+/* import {Colors} from "../styles/Color" */
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    /* border-bottom: 1px solid #C3C3C3; */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto';
+}
+.logo {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    color: #48d9f3;
+}
+.tab {
+    flex: 1;
+    border: none;
+    border-left: 0.8px solid lightgray;
+    background-color: #282f33;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    border-bottom-color: #48d9f3;
+}
+
+.selectedTab {
+    background-color: #48d9f3;
+}
+
+.tabText {
+    font-size: medium;
+    font-weight: 600;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+.selectedTabText {
+    font-size: medium;
+    font-weight: 600;
+    color: #000000;
+    font-family: 'Roboto';
+}
+
+button{
+    border: 0;
+}
