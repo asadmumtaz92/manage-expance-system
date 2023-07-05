@@ -1,17 +1,21 @@
+import React from 'react';
 import './ExpanseItem.css';
+import Moment from 'react-moment';
 
 const ExpanceItem = (props) => {
-
-    const month = props?.item?.date.toLocaleString('en-US', { month: 'long' });
-    const day = props?.item?.date.toLocaleString('en-US', { day: '2-digit' });
-    const year = props?.item?.date.getFullYear();
 
     return (
         <div className='expense-item'>
             <div className="expense-date">
-                <div className="expense-date__month">{month}</div>
-                <div className="expense-date__year">{year}</div>
-                <div className="expense-date__day">{day}</div>
+                <div className="expense-date__month">
+                    <Moment format="MMMM">{props?.item?.date}</Moment>
+                </div>
+                <div className="expense-date__year">
+                    <Moment format="YYYY">{props?.item?.date}</Moment>
+                </div>
+                <div className="expense-date__day">
+                    <Moment format="DD">{props?.item?.date}</Moment>
+                </div>
             </div>
 
             <div className='expense-item__description'>
